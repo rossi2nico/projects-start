@@ -13,10 +13,104 @@
 </header>
 <main>
    <section>
-      <form >
+      <form action="http://www.randyconnolly.com/tests/process.php" method="POST">
          <fieldset>
             <legend>Photo Details</legend>
-
+            <table>
+               <tr>
+                  <td colspan="2">
+                     <label for="title">Title</label><br>
+                     <input type="text" id="title" name="title" class="full-width-input">
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <label for="description">Description</label><br>
+                     <textarea id="description" name="description" class="description-input"></textarea>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="continent">Continent</label><br>
+                     <select id="continent" name="continent" class="continent-dropdown">
+                        <option value="">Select Continent</option>
+                        <option value="africa">Africa</option>
+                        <option value="antarctica">Antarctica</option>
+                        <option value="asia">Asia</option>
+                        <option value="australia">Australia/Oceania</option>
+                        <option value="europe">Europe</option>
+                        <option value="north-america">North America</option>
+                        <option value="south-america">South America</option>
+                     </select><br><br>
+                     
+                     <label for="country">Country</label><br>
+                     <select id="country" name="country" class="country-dropdown">
+                        <option value="">Select Country</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="france">France</option>
+                        <option value="germany">Germany</option>
+                        <option value="italy">Italy</option>
+                        <option value="spain">Spain</option>
+                        <option value="japan">Japan</option>
+                        <option value="china">China</option>
+                        <option value="australia">Australia</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="mexico">Mexico</option>
+                     </select>
+                  </td>
+                  <td class="right-column">
+                     <div class="copyright-section">
+                        <strong>Copyright?</strong><br>
+                        <input type="radio" id="all-rights" name="copyright" value="all-rights">
+                        <label for="all-rights">All rights reserved</label><br>
+                        <input type="radio" id="creative-commons" name="copyright" value="creative-commons">
+                        <label for="creative-commons">Creative commons</label>
+                     </div>
+                     
+                     <div class="creative-commons-section">
+                        <strong>Creative common types</strong><br>
+                        <input type="checkbox" id="attribution" name="cc-types" value="attribution">
+                        <label for="attribution">Attribution</label><br>
+                        <input type="checkbox" id="noncommercial" name="cc-types" value="noncommercial">
+                        <label for="noncommercial">Noncommercial</label><br>
+                        <input type="checkbox" id="no-derivative" name="cc-types" value="no-derivative">
+                        <label for="no-derivative">No derivative works</label>
+                     </div>
+                  </td>
+               </tr>
+               <tr class="license-row">
+                  <td colspan="2">
+                     <input type="checkbox" id="license-accept" name="license-accept" value="accepted">
+                     <label for="license-accept">I accept the software licence</label>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="rating">Rate this photo:</label><br>
+                     <input class = "rating-input" type="text" id="rating" name="rating"><br><br>
+                     
+                     <label for="color-collection">Color collection:</label><br>
+                     <input type="color" id="color-collection" name="color-collection">
+                  </td>
+                  <td class="right-column">
+                     <div class="copyright-section">
+                        <label for="date-taken"><strong>Date taken:</strong></label><br>
+                        <input type="date" id="date-taken" name="date-taken"><br><br>
+                        
+                        <label for="time-taken"><strong>Time taken:</strong></label><br>
+                        <input type="time" id="time-taken" name="time-taken">
+                     </div>
+                  </td>
+               </tr>
+               <tr class = "submit-row">
+                  <td colspan = "2">
+                     <button type = "submit">Submit</button>
+                     <button type = "reset">Clear Form</button>
+                  </td>
+               </tr>
+            </table>
          </fieldset>
       </form>       
    </section>

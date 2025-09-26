@@ -12,7 +12,42 @@ body {
    background-color: #E8EAF6;
 }
 
+table {
+   width: 100%;
+}
 
+.license-row, .submit-row {
+   background-color: #9fa8da;
+   width: 100%;
+}
+
+button {
+   border-radius: 10px;
+   background-color: #e91e63;
+   color: white;
+   height: 30px;
+   width: 80px;
+   border: none;
+   margin: 5px;
+}
+
+.full-width-input {
+   width: 99%;
+}
+
+.rating-input {
+   width: 30px;
+}
+
+.copyright-section, .creative-commons-section {
+   border: 1px solid #9fa8da;
+   padding: 5px;
+   margin: 5px;
+}
+.description-input {
+   width: 99%;
+   height: 50px;
+}
 /* header and navigation */
 
 header, footer {
